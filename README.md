@@ -1,2 +1,1 @@
-# landing-page-template
-## Open index.html on your browser
+# Open index.html on your browser to view template.
