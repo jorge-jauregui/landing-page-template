@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+body {
+    background-color: #131313;
+}
+
+/*
+NAVBAR
+*/
+nav {
+    background-color: black;
+    backdrop-filter: blur(5px);
+    opacity: 0.75;
+    font-family: 'Poiret One', cursive;
+    font-size: 15px;
+}
+div.navbar-nav{
+    padding-right: 30px;
+}
+a.navbar-brand:hover{
+    opacity: 0.7;
+}
+svg.bag-icon {
+    color: gray;
+    margin-top: 9px; 
+    margin-left: 5px;  
+    cursor: pointer;
+}
+svg.bag-icon:hover {
+    color:lightgray;
+}
+button.hamburger:focus{
+    outline: none;
+}
+button.navbar-toggler {
+    border: none;
+}
+button.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/*
+LANDING SECTION
+*/
+
+div.landing-welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 670px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1.landing-text {
+    font-size: 45px;
+    padding-bottom: 15px;
+}
+
+h1.ml6 {
+    font-size: 1.3em;
+    color: gray;
+}
+            .ml6 .text-wrapper {
+                position: relative;
+                display: inline-block;
+                padding-top: 0.2em;
+                padding-right: 0.05em;
+                padding-bottom: 0.1em;
+                overflow: hidden;
+            }
+            .ml6 .letter {
+                display: inline-block;
+                line-height: 1em;
+            }
+
+img.landing-image { /* https://stackoverflow.com/questions/11679567/using-css-for-a-fade-in-effect-on-page-load */
+    padding-bottom: 35px;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+     -ms-animation: fadein 4s; /* Internet Explorer */
+      -o-animation: fadein 4s; /* Opera < 12.1 */
+         animation: fadein 4s;
+}
+            @keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            /* Firefox < 16 */
+            @-moz-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            /* Safari, Chrome and Opera > 12.1 */
+            @-webkit-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+            /* Internet Explorer */
+            @-ms-keyframes fadein {
+                from { opacity: 0; }
+                to   { opacity: 1; }
+            }
+
+/*
+CATALOG SECTION
+*/
+h1.browse {
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 50px;
+}
+div.product-list {
+    padding-top: 100px;
+    padding-bottom: 200px;
+    background-color: white;
+    font-family: 'Poiret One', cursive;
+}
+div.card {
+    margin-top: 10px;
+    padding-top: 5px;
+    cursor: pointer;
+    border: none;
+}
+div.card:hover {
+    opacity: 0.9;
+}
+img.card-img-top {
+    height: 14em;
+}
+div.card-body {
+    background-color: #202020;
+    color: white;
+    margin-top: 5px;
+}
+div.fade-in { 
+    opacity: 0; /* initial condition */
+    transition: opacity 1000ms ease-in;
+}
+div.fade-in.appear {
+    opacity: 1;
+}
+
+/*
+FOOTER
+*/
+div.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+img.social-media {
+    width: 3em;
+    padding: 0px 10px 0px 10px;
+}
+img.social-media:hover{
+    opacity: 0.7;
+}
+div.footer-links {
+    padding: 40px 10px 40px 10px;
+}
+a.footer-link, span.footer-link {
+    color: gray;
+    font-size: 14px;
+}
+a.footer-link:hover{
+    opacity: 0.7;
+    text-decoration: none;
+}
+div.disclaimer{
+    color: gray;
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    h1.landing-header, h1.browse{
+        font-size: 30px;
+    }
+    span.letters{
+        font-size: 17px;
+    }
+    img.landing-image{
+        width: 300px;
+    }
+}
+
+
